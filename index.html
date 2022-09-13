@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/script.js" defer type="module"></script>
+</head>
+<body>
+    <div class="alert-error">
+        Digite somente números
+    </div>
+    <div class="container">
+        <main class="card">
+            <form>
+                <h1 class="title">Cálculo de IMC</h1>
+                <div class="input-wrapper">
+                    <label for="weight">Peso (kg)</label>
+                    <input 
+                    id="weight" 
+                    type="text"
+                    placeholder="60">
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="height">Altura (cm)</label>
+                    <input 
+                    id="height" 
+                    type="text"
+                    placeholder="165">
+                </div>
+                <button type="submit"> Calcular IMC 
+                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.1685 5.65718C0.834445 5.65718 0.563638 5.92799 0.563635 6.26204C0.563633 6.5961 0.834437 6.8669 1.16849 6.86691L1.1685 5.65718ZM12.3589 6.26213L12.7866 6.68983C13.0228 6.45361 13.0228 6.07064 12.7866 5.83442L12.3589 6.26213ZM8.07258 1.12038C7.83637 0.884167 7.45339 0.884167 7.21718 1.12038C6.98097 1.35659 6.98097 1.73957 7.21718 1.97578L8.07258 1.12038ZM7.21718 10.5485C6.98097 10.7847 6.98097 11.1677 7.21718 11.4039C7.45339 11.6401 7.83637 11.6401 8.07258 11.4039L7.21718 10.5485ZM1.16849 6.86691L12.3589 6.86699L12.3589 5.65726L1.1685 5.65718L1.16849 6.86691ZM7.21718 1.97578L11.9312 6.68983L12.7866 5.83442L8.07258 1.12038L7.21718 1.97578ZM11.9312 5.83442L7.21718 10.5485L8.07258 11.4039L12.7866 6.68983L11.9312 5.83442Z" fill="white"/>
+                    </svg>                        
+                </button>
+            </form>
+        </main>
+    </div>
+    <div class="modal-wrapper">
+        <div class="modal card">
+            <h2 class="title">
+                <button class="close">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M14 1.41L12.59 0L7 5.59L1.41 0L0 1.41L5.59 7L0 12.59L1.41 14L7 8.41L12.59 14L14 12.59L8.41 7L14 1.41Z" fill="#0C3440" fill-opacity="0.6"/>
+                        </svg>                        
+                </button>
+                <span>Seu IMC é de 28</span>
+            </h2>
+        </div>
+    </div>
+
+</body>
+</html>
